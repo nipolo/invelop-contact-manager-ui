@@ -966,7 +966,7 @@ __webpack_require__.r(__webpack_exports__);
 const environment = {
     name: _environment_type__WEBPACK_IMPORTED_MODULE_0__.EnvironmentType.Beta,
     production: false,
-    apiUrl: 'http://192.168.136.92:3001/api/',
+    apiUrl: 'http://172.17.0.1:3001/api/',
 };
 
 
