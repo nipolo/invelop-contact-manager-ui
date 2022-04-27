@@ -9,6 +9,8 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { PaginatorModule } from 'primeng/paginator';
 import { InputTextModule } from 'primeng/inputtext';
 import { CalendarModule } from 'primeng/calendar';
+import { ConfirmDialogModule } from 'primeng/confirmdialog';
+import { ConfirmationService } from 'primeng/api';
 
 @NgModule({
   declarations: [],
@@ -22,8 +24,9 @@ import { CalendarModule } from 'primeng/calendar';
     PaginatorModule,
     InputTextModule,
     CalendarModule,
+    ConfirmDialogModule,
   ],
-  providers: [],
+  providers: [ConfirmationService],
   exports: [
     ToastModule,
     TableModule,
@@ -34,6 +37,7 @@ import { CalendarModule } from 'primeng/calendar';
     PaginatorModule,
     InputTextModule,
     CalendarModule,
+    ConfirmDialogModule,
   ],
 })
 export class PrimeNGModule {}

@@ -6,6 +6,7 @@ import { AddressModel, ContactModel, loadContactsSuccess } from '@core/store';
 import { NotificationService } from '@core/services';
 import { ActivatedRoute, Router } from '@angular/router';
 import { uiRoutes } from '@core/constants';
+import { ConfirmationService } from 'primeng/api';
 
 @Component({
   selector: 'app-contacts-list',
@@ -24,7 +25,8 @@ export class ContactsListComponent implements OnInit {
     private store: Store,
     private notificationService: NotificationService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private confirmationService: ConfirmationService
   ) {
     this.contacts$ = this.contactService.selectAllContacts$();
     this.totalRecords$ = this.contactService.selectTotalContacts$();
@@ -51,19 +53,27 @@ export class ContactsListComponent implements OnInit {
   }
 
   deleteProduct(contact: ContactModel) {
-    this.contactService
-      .removeContact$(contact.id)
-      .pipe(take(1))
-      .subscribe({
-        next: (_) => {
-          this.loadContacts();
-          this.notificationService.info('Contact successfully deleted');
-        },
-        error: (e) => {
-          this.isLoading = false;
-          this.notificationService.error(e.message);
-        },
-      });
+    this.confirmationService.confirm({
+      message: `Are you sure that you want to delete "${contact.firstName} ${contact.surname}"contact?`,
+      header: 'Delete contact',
+      icon: 'pi pi-exclamation-triangle',
+      accept: () => {
+        this.contactService
+          .removeContact$(contact.id)
+          .pipe(take(1))
+          .subscribe({
+            next: (_) => {
+              this.loadContacts();
+              this.notificationService.info('Contact successfully deleted');
+            },
+            error: (e) => {
+              this.isLoading = false;
+              this.notificationService.error(e.message);
+            },
+          });
+      },
+      reject: () => {},
+    });
   }
 
   formatAddress(address: AddressModel): string {
