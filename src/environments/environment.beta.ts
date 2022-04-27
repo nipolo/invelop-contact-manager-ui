@@ -3,5 +3,5 @@ import { EnvironmentType } from './environment.type';
 export const environment = {
   name: EnvironmentType.Beta,
   production: false,
-  apiUrl: 'http://172.17.0.1:3001/api/',
+  apiUrl: 'http://63.35.57.109:3001/api/',
 };
