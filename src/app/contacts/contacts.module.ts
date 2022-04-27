@@ -8,9 +8,14 @@ import { contactsFeature } from '@core/store';
 import { ContactsListComponent } from './contacts-list';
 import { ContactService } from './services';
 import { SharedModule } from '@shared/index';
+import { AddEditContactComponent } from './add-edit-contact';
 
 @NgModule({
-  declarations: [ContactsComponent, ContactsListComponent],
+  declarations: [
+    ContactsComponent,
+    ContactsListComponent,
+    AddEditContactComponent,
+  ],
   imports: [
     CommonModule,
     ContactsRoutingModule,

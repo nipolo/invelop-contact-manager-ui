@@ -6,6 +6,7 @@
         <button
           pButton
           pRipple
+          id="add-new-contact-btn"
           label="New"
           icon="pi pi-plus"
           class="p-button-success p-mr-2"
@@ -38,14 +39,14 @@
               pButton
               pRipple
               icon="pi pi-pencil"
-              class="p-button-rounded p-button-success p-mr-2"
+              class="p-button-rounded p-button-success p-mr-2 edit-product"
               (click)="editContact(contact)"
             ></button>
             <button
               pButton
               pRipple
               icon="pi pi-trash"
-              class="p-button-rounded p-button-warning"
+              class="p-button-rounded p-button-warning delete-product"
               (click)="deleteProduct(contact)"
             ></button>
           </td>

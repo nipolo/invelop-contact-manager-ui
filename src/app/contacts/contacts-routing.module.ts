@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { uiRoutes } from '@core/constants';
+import { AddEditContactComponent } from './add-edit-contact';
 import { ContactsListComponent } from './contacts-list';
 import { ContactsComponent } from './contacts.component';
 
@@ -18,6 +19,16 @@ const routes: Routes = [
         path: uiRoutes.contactsModule.routes.allContacts,
         pathMatch: 'full',
         component: ContactsListComponent,
+      },
+      {
+        path: uiRoutes.contactsModule.routes.addContact,
+        pathMatch: 'full',
+        component: AddEditContactComponent,
+      },
+      {
+        path: uiRoutes.contactsModule.routes.updateContact.withParams,
+        pathMatch: 'full',
+        component: AddEditContactComponent,
       },
     ],
   },

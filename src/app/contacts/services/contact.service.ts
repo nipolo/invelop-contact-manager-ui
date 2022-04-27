@@ -5,12 +5,18 @@ import { UrlGenerationService } from '@core/services';
 import {
   AppState,
   ContactModel,
+  selectContact,
   selectContacts,
   selectTotalContacts,
 } from '@core/store';
 import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs';
-import { RemoveContactCommand } from '../commands';
+import { filter, map, Observable } from 'rxjs';
+import {
+  AddContactCommand,
+  AddressDto,
+  RemoveContactCommand,
+  UpdateContactCommand,
+} from '../commands';
 import { AllContactsDto } from '../dtos';
 
 @Injectable({
@@ -31,6 +37,67 @@ export class ContactService {
       this.urlGenerationService.getApiEndpointUrl(
         urlRoutes.getGetAllContacts(pageNum, pageSize)
       )
+    );
+  }
+
+  getContact$(id: number): Observable<ContactModel> {
+    return this.store.select(selectContact(id)).pipe(
+      filter((x) => !!x),
+      map((x) => <ContactModel>x)
+    );
+  }
+
+  addContact$(
+    firstName: string,
+    surname: string,
+    birthDate: Date,
+    line1: string,
+    line2: string,
+    city: string,
+    postcode: string,
+    country: string,
+    phoneNumber: string,
+    iban: string
+  ): Observable<any> {
+    var body = <AddContactCommand>{
+      firstName,
+      address: <AddressDto>{ city, country, line1, line2, postcode },
+      birthDate,
+      iban,
+      phoneNumber,
+      surname,
+    };
+    return this.http.post(
+      this.urlGenerationService.getApiEndpointUrl(urlRoutes.postCreateContact),
+      body
+    );
+  }
+
+  editContact$(
+    id: number,
+    firstName: string,
+    surname: string,
+    birthDate: Date,
+    line1: string,
+    line2: string,
+    city: string,
+    postcode: string,
+    country: string,
+    phoneNumber: string,
+    iban: string
+  ): Observable<any> {
+    var body = <UpdateContactCommand>{
+      id,
+      firstName,
+      address: <AddressDto>{ city, country, line1, line2, postcode },
+      birthDate,
+      iban,
+      phoneNumber,
+      surname,
+    };
+    return this.http.put(
+      this.urlGenerationService.getApiEndpointUrl(urlRoutes.putUpdateContact),
+      body
     );
   }
 

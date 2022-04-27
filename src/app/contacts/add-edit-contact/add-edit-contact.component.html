@@ -1,0 +1,73 @@
+<form [formGroup]="contactForm">
+  <h2>{{ title }}</h2>
+  <div class="grid p-fluid lg:col-6 md:col-12">
+    <div class="p-col-12 lg:col-4 md:col-12">
+      <label for="firstName">First Name</label>
+      <input
+        id="firstName"
+        type="text"
+        pInputText
+        formControlName="firstName"
+      />
+    </div>
+    <div class="p-col-12 lg:col-4 md:col-12">
+      <label for="surname">Surname</label>
+      <input id="surname" type="text" pInputText formControlName="surname" />
+    </div>
+    <div class="p-col-12 lg:col-4 md:col-12">
+      <label for="birthDate">BirthDate</label>
+      <p-calendar inputId="birthDate" formControlName="birthDate"></p-calendar>
+    </div>
+    <div class="p-col-12 lg:col-6 md:col-12">
+      <label for="line1">Line1</label>
+      <input id="line1" type="text" pInputText formControlName="line1" />
+    </div>
+    <div class="p-col-12 lg:col-6 md:col-12">
+      <label for="line2">Line2</label>
+      <input id="line2" type="text" pInputText formControlName="line2" />
+    </div>
+    <div class="p-col-12 lg:col-4 md:col-12">
+      <label for="postcode">Postcode</label>
+      <input id="postcode" type="text" pInputText formControlName="postcode" />
+    </div>
+    <div class="p-col-12 lg:col-4 md:col-12">
+      <label for="city">City</label>
+      <input id="city" type="text" pInputText formControlName="city" />
+    </div>
+    <div class="p-col-12 lg:col-4 md:col-12">
+      <label for="country">Country</label>
+      <input id="country" type="text" pInputText formControlName="country" />
+    </div>
+    <div class="p-col-12 lg:col-4 md:col-12">
+      <label for="phoneNumber">Phone Number</label>
+      <input
+        id="phoneNumber"
+        type="text"
+        pInputText
+        formControlName="phoneNumber"
+      />
+    </div>
+    <div class="p-col-12 lg:col-4 md:col-12">
+      <label for="iban">IBAN</label>
+      <input id="iban" type="text" pInputText formControlName="iban" />
+    </div>
+  </div>
+  <button
+    pButton
+    pRipple
+    id="add-edit-btn"
+    label="Save"
+    icon="pi pi-check"
+    class="p-button"
+    (click)="addEdit()"
+  ></button>
+  <button
+    pButton
+    pRipple
+    id="cancel-btn"
+    label="Cancel"
+    icon="pi pi-times"
+    class="p-button"
+    (click)="cancel()"
+  ></button>
+</form>

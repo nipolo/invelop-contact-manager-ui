@@ -4,6 +4,8 @@ import { Observable, of, take } from 'rxjs';
 import { ContactService } from '../services';
 import { AddressModel, ContactModel, loadContactsSuccess } from '@core/store';
 import { NotificationService } from '@core/services';
+import { ActivatedRoute, Router } from '@angular/router';
+import { uiRoutes } from '@core/constants';
 
 @Component({
   selector: 'app-contacts-list',
@@ -20,7 +22,9 @@ export class ContactsListComponent implements OnInit {
   constructor(
     private contactService: ContactService,
     private store: Store,
-    private notificationService: NotificationService
+    private notificationService: NotificationService,
+    private router: Router,
+    private route: ActivatedRoute
   ) {
     this.contacts$ = this.contactService.selectAllContacts$();
     this.totalRecords$ = this.contactService.selectTotalContacts$();
@@ -31,9 +35,20 @@ export class ContactsListComponent implements OnInit {
     this.loadContacts();
   }
 
-  addNewContact() {}
+  addNewContact() {
+    this.router.navigate(['../', uiRoutes.contactsModule.routes.addContact], {
+      relativeTo: this.route,
+    });
+  }
 
-  editContact(contact: ContactModel) {}
+  editContact(contact: ContactModel) {
+    this.router.navigate(
+      ['../', uiRoutes.contactsModule.routes.updateContact.base, contact.id],
+      {
+        relativeTo: this.route,
+      }
+    );
+  }
 
   deleteProduct(contact: ContactModel) {
     this.contactService

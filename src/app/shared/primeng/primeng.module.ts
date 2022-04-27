@@ -5,9 +5,10 @@ import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
 import { ToolbarModule } from 'primeng/toolbar';
-import { DialogModule } from 'primeng/dialog';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { PaginatorModule } from 'primeng/paginator';
+import { InputTextModule } from 'primeng/inputtext';
+import { CalendarModule } from 'primeng/calendar';
 
 @NgModule({
   declarations: [],
@@ -17,9 +18,10 @@ import { PaginatorModule } from 'primeng/paginator';
     ButtonModule,
     RippleModule,
     ToolbarModule,
-    DialogModule,
     ProgressSpinnerModule,
     PaginatorModule,
+    InputTextModule,
+    CalendarModule,
   ],
   providers: [],
   exports: [
@@ -28,9 +30,10 @@ import { PaginatorModule } from 'primeng/paginator';
     ButtonModule,
     RippleModule,
     ToolbarModule,
-    DialogModule,
     ProgressSpinnerModule,
     PaginatorModule,
+    InputTextModule,
+    CalendarModule,
   ],
 })
 export class PrimeNGModule {}

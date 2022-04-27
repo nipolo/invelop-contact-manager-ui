@@ -4,13 +4,16 @@ export const uiRoutes = {
     routes: {
       allContacts: 'all',
       addContact: 'add',
-      updateContact: 'update/:id',
+      updateContact: { base: 'update', withParams: 'update/:id' },
     },
   },
 };
 
-export const uiUrls = {
+export const absoluteUIUrls = {
   allContacts: '/contacts/all',
   addContact: '/contacts/add',
-  updateContact: '/contacts/update/:id',
+  updateContact: {
+    base: '/contacts/update',
+    withParams: '/contacts/update/:id',
+  },
 };

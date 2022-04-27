@@ -12,3 +12,8 @@ export const selectTotalContacts = createSelector(
   selectContactsFeature,
   (state: ContactsState) => state?.totalContacts
 );
+
+export const selectContact = (id: number) =>
+  createSelector(selectContactsFeature, (state: ContactsState) =>
+    state.contacts.find((c) => c.id === id)
+  );
