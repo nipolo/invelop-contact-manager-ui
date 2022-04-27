@@ -7,3 +7,8 @@ export const selectContacts = createSelector(
   selectContactsFeature,
   (state: ContactsState) => state?.contacts
 );
+
+export const selectTotalContacts = createSelector(
+  selectContactsFeature,
+  (state: ContactsState) => state?.totalContacts
+);

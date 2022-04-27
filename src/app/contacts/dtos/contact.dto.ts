@@ -1,11 +1,12 @@
-import { AddressModel } from './address.model';
+import { AddressDto } from './address.dto';
 
-export interface ContactModel {
+export interface ContactDto {
   id: number;
+  name: string;
   firstName: string;
   surname: string;
   birthDate: Date;
-  address: AddressModel;
+  address: AddressDto;
   phoneNumber: string;
   iban: string;
 }

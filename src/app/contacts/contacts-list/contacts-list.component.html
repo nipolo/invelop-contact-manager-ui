@@ -1,0 +1,62 @@
+<p-progressSpinner *ngIf="isLoading; else tableContent"></p-progressSpinner>
+<ng-template #tableContent>
+  <div class="card">
+    <p-toolbar styleClass="p-mb-4">
+      <ng-template pTemplate="left">
+        <button
+          pButton
+          pRipple
+          label="New"
+          icon="pi pi-plus"
+          class="p-button-success p-mr-2"
+          (click)="addNewContact()"
+        ></button>
+      </ng-template>
+    </p-toolbar>
+    <p-table styleClass="p-datatable-sm" [value]="(contacts$ | async) || []">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>First Name</th>
+          <th>Surname</th>
+          <th>BirthDate</th>
+          <th>Address</th>
+          <th>Phone Number</th>
+          <th>IBAN</th>
+          <th></th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-contact>
+        <tr>
+          <td>{{ contact.firstName }}</td>
+          <td>{{ contact.surname }}</td>
+          <td>{{ contact.birthDate | date: "dd/MM/yyyy" }}</td>
+          <td>{{ formatAddress(contact.address) }}</td>
+          <td>{{ contact.phoneNumber }}</td>
+          <td>{{ contact.iban }}</td>
+          <td>
+            <button
+              pButton
+              pRipple
+              icon="pi pi-pencil"
+              class="p-button-rounded p-button-success p-mr-2"
+              (click)="editContact(contact)"
+            ></button>
+            <button
+              pButton
+              pRipple
+              icon="pi pi-trash"
+              class="p-button-rounded p-button-warning"
+              (click)="deleteProduct(contact)"
+            ></button>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+    <p-paginator
+      [rows]="pageSize"
+      [totalRecords]="(totalRecords$ | async) || 0"
+      [rowsPerPageOptions]="[3, 5, 10]"
+      (onPageChange)="contactsPaginatorChanged($event)"
+    ></p-paginator>
+  </div>
+</ng-template>

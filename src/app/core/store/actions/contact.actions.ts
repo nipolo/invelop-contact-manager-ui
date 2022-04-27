@@ -5,7 +5,7 @@ export const loadContacts = createAction('[Contacts] Load Contacts');
 
 export const loadContactsSuccess = createAction(
   '[Contacts] Load Contacts Success',
-  props<{ contacts: ContactModel[] }>()
+  props<{ contacts: ContactModel[]; totalContacts: number }>()
 );
 
 export const loadContactsFailure = createAction(

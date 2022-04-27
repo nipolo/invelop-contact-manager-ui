@@ -6,9 +6,10 @@ export const contactsFeature = createFeature({
   name: 'contacts',
   reducer: createReducer(
     initialContactsState,
-    on(loadContactsSuccess, (state, { contacts }) => ({
+    on(loadContactsSuccess, (state, { contacts, totalContacts }) => ({
       ...state,
       contacts,
+      totalContacts,
     }))
   ),
 });
