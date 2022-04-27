@@ -7,7 +7,7 @@ function getSavedState(localStorageKey: string): any {
   return JSON.parse(localStorage.getItem(localStorageKey) || '{}');
 }
 
-const localStorageKey = 'optimusTraderState';
+const localStorageKey = 'contactManagerState';
 
 export function storageMetaReducer<S, A extends Action = Action>(
   reducer: ActionReducer<S, A>

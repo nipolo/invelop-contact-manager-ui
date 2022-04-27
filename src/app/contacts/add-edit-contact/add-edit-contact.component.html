@@ -59,6 +59,7 @@
     label="Save"
     icon="pi pi-check"
     class="p-button"
+    [disabled]="!isFormValid"
     (click)="addEdit()"
   ></button>
   <button

@@ -35,6 +35,10 @@ export class AddEditContactComponent implements OnInit, OnDestroy {
     return this.mode == ComponentModeType.Edit;
   }
 
+  get isFormValid(): boolean {
+    return this.contactForm.valid;
+  }
+
   constructor(
     private router: Router,
     private route: ActivatedRoute,
