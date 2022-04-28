@@ -124,10 +124,9 @@
     pButton
     pRipple
     id="add-edit-btn"
-    label="Save"
+    [label]="isAdd ? 'Create' : 'Save'"
     icon="pi pi-check"
     class="p-button"
-    [disabled]="!isFormValid"
     (click)="addEdit()"
   ></button>
   <button

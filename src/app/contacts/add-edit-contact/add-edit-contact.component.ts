@@ -18,6 +18,7 @@ export class AddEditContactComponent implements OnInit, OnDestroy {
   mode: ComponentModeType;
   contactForm: FormGroup;
   subscription: Subscription[] = [];
+  isAddEditButtonClicked = false;
 
   get title(): string {
     if (this.mode == ComponentModeType.Add) {
@@ -33,10 +34,6 @@ export class AddEditContactComponent implements OnInit, OnDestroy {
 
   get isUpdate(): boolean {
     return this.mode == ComponentModeType.Edit;
-  }
-
-  get isFormValid(): boolean {
-    return this.contactForm.valid;
   }
 
   constructor(
@@ -95,7 +92,8 @@ export class AddEditContactComponent implements OnInit, OnDestroy {
 
   showErrorMessage(controlName: string, validationType: string) {
     return (
-      this.contactForm.controls[controlName].dirty &&
+      (this.isAddEditButtonClicked ||
+        this.contactForm.controls[controlName].dirty) &&
       this.contactForm.controls[controlName].errors?.[validationType]
     );
   }
@@ -108,6 +106,12 @@ export class AddEditContactComponent implements OnInit, OnDestroy {
   }
 
   addEdit() {
+    this.isAddEditButtonClicked = true;
+
+    if (!this.contactForm.valid) {
+      return;
+    }
+
     let request$: Observable<any>;
 
     if (this.isAdd) {
