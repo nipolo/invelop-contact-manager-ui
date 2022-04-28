@@ -103,6 +103,7 @@ class AddEditContactComponent {
         this.contactService = contactService;
         this.notificationService = notificationService;
         this.subscription = [];
+        this.isAddEditButtonClicked = false;
         const id = this.route.snapshot.paramMap.get('id');
         if (!id || isNaN(Number(id))) {
             this.id = null;
@@ -145,9 +146,6 @@ class AddEditContactComponent {
     get isUpdate() {
         return this.mode == _core_enums__WEBPACK_IMPORTED_MODULE_2__.ComponentModeType.Edit;
     }
-    get isFormValid() {
-        return this.contactForm.valid;
-    }
     ngOnInit() {
         if (this.isUpdate) {
             this.subscription.push(this.contactService.getContact$(this.id).subscribe((x) => this.contactForm.patchValue(Object.assign(Object.assign(Object.assign({}, x), x.address), { birthDate: new Date(x.birthDate) }))));
@@ -158,7 +156,8 @@ class AddEditContactComponent {
     }
     showErrorMessage(controlName, validationType) {
         var _a;
-        return (this.contactForm.controls[controlName].dirty &&
+        return ((this.isAddEditButtonClicked ||
+            this.contactForm.controls[controlName].dirty) &&
             ((_a = this.contactForm.controls[controlName].errors) === null || _a === void 0 ? void 0 : _a[validationType]));
     }
     cancel() {
@@ -168,6 +167,10 @@ class AddEditContactComponent {
         ]);
     }
     addEdit() {
+        this.isAddEditButtonClicked = true;
+        if (!this.contactForm.valid) {
+            return;
+        }
         let request$;
         if (this.isAdd) {
             request$ = this.contactService.addContact$(this.contactForm.value.firstName, this.contactForm.value.surname, this.contactForm.value.birthDate, this.contactForm.value.line1, this.contactForm.value.line2, this.contactForm.value.city, this.contactForm.value.postcode, this.contactForm.value.country, this.contactForm.value.phoneNumber, this.contactForm.value.iban);
@@ -190,7 +193,7 @@ class AddEditContactComponent {
     }
 }
 AddEditContactComponent.ɵfac = function AddEditContactComponent_Factory(t) { return new (t || AddEditContactComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_8__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_8__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormBuilder), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_services__WEBPACK_IMPORTED_MODULE_3__.ContactService), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_core_services__WEBPACK_IMPORTED_MODULE_4__.NotificationService)); };
-AddEditContactComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: AddEditContactComponent, selectors: [["app-add-edit-contact"]], decls: 57, vars: 14, consts: [[3, "formGroup"], [1, "grid", "p-fluid", "lg:col-6", "md:col-12"], [1, "p-col-12", "lg:col-4", "md:col-12"], ["for", "firstName"], ["id", "firstName", "type", "text", "pInputText", "", "formControlName", "firstName"], ["id", "firstName-error", "class", "p-error block", 4, "ngIf"], ["for", "surname"], ["id", "surname", "type", "text", "pInputText", "", "formControlName", "surname"], ["id", "surname-error", "class", "p-error block", 4, "ngIf"], ["for", "birthDate"], ["inputId", "birthDate", "formControlName", "birthDate"], ["id", "birthDate-error", "class", "p-error block", 4, "ngIf"], [1, "p-col-12", "lg:col-6", "md:col-12"], ["for", "line1"], ["id", "line1", "type", "text", "pInputText", "", "formControlName", "line1"], ["id", "line1-error", "class", "p-error block", 4, "ngIf"], ["for", "line2"], ["id", "line2", "type", "text", "pInputText", "", "formControlName", "line2"], ["for", "postcode"], ["id", "postcode", "type", "text", "pInputText", "", "formControlName", "postcode"], ["id", "postcode-error", "class", "p-error block", 4, "ngIf"], ["for", "city"], ["id", "city", "type", "text", "pInputText", "", "formControlName", "city"], ["id", "city-error", "class", "p-error block", 4, "ngIf"], ["for", "country"], ["id", "country", "type", "text", "pInputText", "", "formControlName", "country"], ["id", "country-error", "class", "p-error block", 4, "ngIf"], ["for", "phoneNumber"], ["id", "phoneNumber", "type", "text", "pInputText", "", "formControlName", "phoneNumber"], ["id", "phoneNumber-error", "class", "p-error block", 4, "ngIf"], ["id", "phoneNumber-pattern-error", "class", "p-error block", 4, "ngIf"], ["for", "iban"], ["id", "iban", "type", "text", "pInputText", "", "formControlName", "iban"], ["id", "iban-error", "class", "p-error block", 4, "ngIf"], ["id", "iban-pattern-error", "class", "p-error block", 4, "ngIf"], ["pButton", "", "pRipple", "", "id", "add-edit-btn", "label", "Save", "icon", "pi pi-check", 1, "p-button", 3, "disabled", "click"], ["pButton", "", "pRipple", "", "id", "cancel-btn", "label", "Cancel", "icon", "pi pi-times", 1, "p-button", 3, "click"], ["id", "firstName-error", 1, "p-error", "block"], ["id", "surname-error", 1, "p-error", "block"], ["id", "birthDate-error", 1, "p-error", "block"], ["id", "line1-error", 1, "p-error", "block"], ["id", "postcode-error", 1, "p-error", "block"], ["id", "city-error", 1, "p-error", "block"], ["id", "country-error", 1, "p-error", "block"], ["id", "phoneNumber-error", 1, "p-error", "block"], ["id", "phoneNumber-pattern-error", 1, "p-error", "block"], ["id", "iban-error", 1, "p-error", "block"], ["id", "iban-pattern-error", 1, "p-error", "block"]], template: function AddEditContactComponent_Template(rf, ctx) { if (rf & 1) {
+AddEditContactComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: AddEditContactComponent, selectors: [["app-add-edit-contact"]], decls: 57, vars: 14, consts: [[3, "formGroup"], [1, "grid", "p-fluid", "lg:col-6", "md:col-12"], [1, "p-col-12", "lg:col-4", "md:col-12"], ["for", "firstName"], ["id", "firstName", "type", "text", "pInputText", "", "formControlName", "firstName"], ["id", "firstName-error", "class", "p-error block", 4, "ngIf"], ["for", "surname"], ["id", "surname", "type", "text", "pInputText", "", "formControlName", "surname"], ["id", "surname-error", "class", "p-error block", 4, "ngIf"], ["for", "birthDate"], ["inputId", "birthDate", "formControlName", "birthDate"], ["id", "birthDate-error", "class", "p-error block", 4, "ngIf"], [1, "p-col-12", "lg:col-6", "md:col-12"], ["for", "line1"], ["id", "line1", "type", "text", "pInputText", "", "formControlName", "line1"], ["id", "line1-error", "class", "p-error block", 4, "ngIf"], ["for", "line2"], ["id", "line2", "type", "text", "pInputText", "", "formControlName", "line2"], ["for", "postcode"], ["id", "postcode", "type", "text", "pInputText", "", "formControlName", "postcode"], ["id", "postcode-error", "class", "p-error block", 4, "ngIf"], ["for", "city"], ["id", "city", "type", "text", "pInputText", "", "formControlName", "city"], ["id", "city-error", "class", "p-error block", 4, "ngIf"], ["for", "country"], ["id", "country", "type", "text", "pInputText", "", "formControlName", "country"], ["id", "country-error", "class", "p-error block", 4, "ngIf"], ["for", "phoneNumber"], ["id", "phoneNumber", "type", "text", "pInputText", "", "formControlName", "phoneNumber"], ["id", "phoneNumber-error", "class", "p-error block", 4, "ngIf"], ["id", "phoneNumber-pattern-error", "class", "p-error block", 4, "ngIf"], ["for", "iban"], ["id", "iban", "type", "text", "pInputText", "", "formControlName", "iban"], ["id", "iban-error", "class", "p-error block", 4, "ngIf"], ["id", "iban-pattern-error", "class", "p-error block", 4, "ngIf"], ["pButton", "", "pRipple", "", "id", "add-edit-btn", "icon", "pi pi-check", 1, "p-button", 3, "label", "click"], ["pButton", "", "pRipple", "", "id", "cancel-btn", "label", "Cancel", "icon", "pi pi-times", 1, "p-button", 3, "click"], ["id", "firstName-error", 1, "p-error", "block"], ["id", "surname-error", 1, "p-error", "block"], ["id", "birthDate-error", 1, "p-error", "block"], ["id", "line1-error", 1, "p-error", "block"], ["id", "postcode-error", 1, "p-error", "block"], ["id", "city-error", 1, "p-error", "block"], ["id", "country-error", 1, "p-error", "block"], ["id", "phoneNumber-error", 1, "p-error", "block"], ["id", "phoneNumber-pattern-error", 1, "p-error", "block"], ["id", "iban-error", 1, "p-error", "block"], ["id", "iban-pattern-error", 1, "p-error", "block"]], template: function AddEditContactComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "form", 0)(1, "h2");
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](2);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
@@ -288,7 +291,7 @@ AddEditContactComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MO
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.showErrorMessage("iban", "pattern"));
         _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("disabled", !ctx.isFormValid);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("label", ctx.isAdd ? "Create" : "Save");
     } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_6__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.DefaultValueAccessor, primeng_inputtext__WEBPACK_IMPORTED_MODULE_9__.InputText, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormControlName, _angular_common__WEBPACK_IMPORTED_MODULE_10__.NgIf, primeng_calendar__WEBPACK_IMPORTED_MODULE_11__.Calendar, primeng_button__WEBPACK_IMPORTED_MODULE_12__.ButtonDirective, primeng_ripple__WEBPACK_IMPORTED_MODULE_13__.Ripple], styles: [".p-button[_ngcontent-%COMP%] {\n  margin-right: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFkZC1lZGl0LWNvbnRhY3QuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBQTtBQUNGIiwiZmlsZSI6ImFkZC1lZGl0LWNvbnRhY3QuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucC1idXR0b24ge1xyXG4gIG1hcmdpbi1yaWdodDogMTBweDtcclxufVxyXG4iXX0= */"] });
 
 
