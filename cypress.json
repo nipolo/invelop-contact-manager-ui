@@ -1,0 +1,8 @@
+{
+  "integrationFolder": "cypress",
+  "testFiles": "**/e2e/*.spec.js",
+  "chromeWebSecurity": false,
+  "env": {
+    "UI_BASE_URL": "http://localhost:4200"
+  }
+}

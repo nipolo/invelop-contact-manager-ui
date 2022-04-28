@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,angular,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,angular,node
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,angular,node,cypressio
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,angular,node,cypressio
 
 ### Angular ###
 ## Angular ##
@@ -33,6 +33,15 @@ e2e/*.map
 
 # System Files
 .DS_Store/
+
+### CypressIO ###
+# gitignore template for the CypressIO, browser test framework
+# website: https://www.cypress.io/
+
+cypress/results/*
+cypress/reports/*
+cypress/screenshots/*
+cypress/videos/*
 
 ### Node ###
 # Logs
@@ -198,4 +207,4 @@ dist
 # Ignore code-workspaces
 *.code-workspace
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,angular,node
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,angular,node,cypressio

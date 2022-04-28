@@ -39,12 +39,18 @@ Execute these commands:
 
 ## Test the project
 
-### Local
+### Automated testing
+
+1. Start the application locally in one of the ways listed in the **Initial setup** section
+1. Run the command **npm run test:e2e:run** (_npm run test:e2e:beta:run_ for BETA EC2 Server) to execute the e2e test of the application. There is now only tests for the CRUD operations
+1. If you want to run manually any e2e tests and observe the testflow then run **npm run test:e2e:debug** (_npm run test:e2e:beta:debug_ for BETA EC2 Server)
+
+### Manual testing - Local
 
 1. Deploy it locally either with Angular CLI or Docker cotainer
 1. Go to http://localhost:4200
 
-### BETA EC2 Server
+### Manual testing - BETA EC2 Server
 
 The application is deployed [here](http://63.35.57.109:4200/).
 

@@ -13,7 +13,10 @@
     "docker:run:beta": "docker run --name invelop-contact-manager-ui-beta -d -p 4200:80 invelop-contact-manager-ui-beta/latest",
     "docker:rebuild:dev": "docker container stop invelop-contact-manager-ui-local && docker container rm invelop-contact-manager-ui-local && npm run docker:build:dev && npm run docker:run:dev",
     "docker:rebuild:beta": "git pull && docker container stop invelop-contact-manager-ui-beta && docker container rm invelop-contact-manager-ui-beta && npm run docker:build:beta && npm run docker:run:beta",
-    "test": "ng test"
+    "test:e2e:run": "cypress run --spec cypress/e2e/**/*",
+    "test:e2e:debug": "cypress open",
+    "test:e2e:beta:run": "cypress run --spec cypress/e2e/**/* --env UI_BASE_URL=http://63.35.57.109:4200",
+    "test:e2e:beta:debug": "cypress open --env UI_BASE_URL=http://63.35.57.109:4200"
   },
   "private": true,
   "dependencies": {
@@ -28,6 +31,7 @@
     "@angular/router": "~13.3.0",
     "@ngrx/store": "^13.1.0",
     "@ngrx/store-devtools": "^13.1.0",
+    "moment": "^2.29.3",
     "primeflex": "^3.1.3",
     "primeicons": "^5.0.0",
     "primeng": "^13.3.3",
@@ -43,6 +47,7 @@
     "@ngrx/schematics": "^13.1.0",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
+    "cypress": "^9.6.0",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
