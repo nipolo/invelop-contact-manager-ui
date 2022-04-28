@@ -11,19 +11,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AddEditContactComponent": () => (/* binding */ AddEditContactComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/forms */ 587);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ 587);
 /* harmony import */ var _core_constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @core/constants */ 7763);
 /* harmony import */ var _core_constants_ui_routes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @core/constants/ui-routes */ 2179);
 /* harmony import */ var _core_enums__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @core/enums */ 9442);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ 9295);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ 3184);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs */ 9295);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 3184);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/router */ 2816);
 /* harmony import */ var _services__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../services */ 6109);
 /* harmony import */ var _core_services__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @core/services */ 8138);
 /* harmony import */ var primeng_inputtext__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! primeng/inputtext */ 5583);
-/* harmony import */ var primeng_calendar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! primeng/calendar */ 1229);
-/* harmony import */ var primeng_button__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! primeng/button */ 4633);
-/* harmony import */ var primeng_ripple__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! primeng/ripple */ 2875);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common */ 6362);
+/* harmony import */ var primeng_calendar__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! primeng/calendar */ 1229);
+/* harmony import */ var primeng_button__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! primeng/button */ 4633);
+/* harmony import */ var primeng_ripple__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! primeng/ripple */ 2875);
 
 
 
@@ -38,6 +39,62 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+function AddEditContactComponent_small_8_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "small", 37);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "First Name required.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+} }
+function AddEditContactComponent_small_13_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "small", 38);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "Surname required.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+} }
+function AddEditContactComponent_small_18_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "small", 39);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "Birth Date required.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+} }
+function AddEditContactComponent_small_23_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "small", 40);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "Line1 required.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+} }
+function AddEditContactComponent_small_32_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "small", 41);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "Postcode required.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+} }
+function AddEditContactComponent_small_37_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "small", 42);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "City required.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+} }
+function AddEditContactComponent_small_42_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "small", 43);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "Country required.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+} }
+function AddEditContactComponent_small_47_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "small", 44);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "Phone Number required.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+} }
+function AddEditContactComponent_small_48_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "small", 45);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "Phone Number is in incorrect format - example +123-456-789 or 088-111-1-11");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+} }
+function AddEditContactComponent_small_53_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "small", 46);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "IBAN required.");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+} }
+function AddEditContactComponent_small_54_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "small", 47);
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "IBAN is in incorrect format - example BG12-ABCD-1234-5678-1234-56");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+} }
 class AddEditContactComponent {
     constructor(router, route, fb, contactService, notificationService) {
         this.router = router;
@@ -56,21 +113,21 @@ class AddEditContactComponent {
             this.mode = _core_enums__WEBPACK_IMPORTED_MODULE_2__.ComponentModeType.Edit;
         }
         this.contactForm = this.fb.group({
-            firstName: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_5__.Validators.required]),
-            surname: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_5__.Validators.required]),
-            birthDate: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_5__.Validators.required]),
-            line1: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_5__.Validators.required]),
+            firstName: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_6__.Validators.required]),
+            surname: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_6__.Validators.required]),
+            birthDate: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_6__.Validators.required]),
+            line1: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_6__.Validators.required]),
             line2: this.fb.control(''),
-            postcode: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_5__.Validators.required]),
-            city: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_5__.Validators.required]),
-            country: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_5__.Validators.required]),
+            postcode: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_6__.Validators.required]),
+            city: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_6__.Validators.required]),
+            country: this.fb.control('', [_angular_forms__WEBPACK_IMPORTED_MODULE_6__.Validators.required]),
             phoneNumber: this.fb.control('', [
-                _angular_forms__WEBPACK_IMPORTED_MODULE_5__.Validators.required,
-                _angular_forms__WEBPACK_IMPORTED_MODULE_5__.Validators.pattern(_core_constants__WEBPACK_IMPORTED_MODULE_0__.RegexValidationsConsts.PhoneNumber),
+                _angular_forms__WEBPACK_IMPORTED_MODULE_6__.Validators.required,
+                _angular_forms__WEBPACK_IMPORTED_MODULE_6__.Validators.pattern(_core_constants__WEBPACK_IMPORTED_MODULE_0__.RegexValidationsConsts.PhoneNumber),
             ]),
             iban: this.fb.control('', [
-                _angular_forms__WEBPACK_IMPORTED_MODULE_5__.Validators.required,
-                _angular_forms__WEBPACK_IMPORTED_MODULE_5__.Validators.pattern(_core_constants__WEBPACK_IMPORTED_MODULE_0__.RegexValidationsConsts.IBAN),
+                _angular_forms__WEBPACK_IMPORTED_MODULE_6__.Validators.required,
+                _angular_forms__WEBPACK_IMPORTED_MODULE_6__.Validators.pattern(_core_constants__WEBPACK_IMPORTED_MODULE_0__.RegexValidationsConsts.IBAN),
             ]),
         });
     }
@@ -99,6 +156,11 @@ class AddEditContactComponent {
     ngOnDestroy() {
         this.subscription.forEach((s) => s.unsubscribe());
     }
+    showErrorMessage(controlName, validationType) {
+        var _a;
+        return (this.contactForm.controls[controlName].dirty &&
+            ((_a = this.contactForm.controls[controlName].errors) === null || _a === void 0 ? void 0 : _a[validationType]));
+    }
     cancel() {
         this.router.navigate([
             _core_constants_ui_routes__WEBPACK_IMPORTED_MODULE_1__.uiRoutes.contactsModule.base,
@@ -113,7 +175,7 @@ class AddEditContactComponent {
         else {
             request$ = this.contactService.editContact$(this.id, this.contactForm.value.firstName, this.contactForm.value.surname, this.contactForm.value.birthDate, this.contactForm.value.line1, this.contactForm.value.line2, this.contactForm.value.city, this.contactForm.value.postcode, this.contactForm.value.country, this.contactForm.value.phoneNumber, this.contactForm.value.iban);
         }
-        request$.pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_6__.take)(1)).subscribe({
+        request$.pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_7__.take)(1)).subscribe({
             next: (_) => {
                 this.router.navigate([
                     _core_constants_ui_routes__WEBPACK_IMPORTED_MODULE_1__.uiRoutes.contactsModule.base,
@@ -127,74 +189,107 @@ class AddEditContactComponent {
         });
     }
 }
-AddEditContactComponent.ɵfac = function AddEditContactComponent_Factory(t) { return new (t || AddEditContactComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_8__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_8__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormBuilder), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_services__WEBPACK_IMPORTED_MODULE_3__.ContactService), _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdirectiveInject"](_core_services__WEBPACK_IMPORTED_MODULE_4__.NotificationService)); };
-AddEditContactComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineComponent"]({ type: AddEditContactComponent, selectors: [["app-add-edit-contact"]], decls: 46, vars: 3, consts: [[3, "formGroup"], [1, "grid", "p-fluid", "lg:col-6", "md:col-12"], [1, "p-col-12", "lg:col-4", "md:col-12"], ["for", "firstName"], ["id", "firstName", "type", "text", "pInputText", "", "formControlName", "firstName"], ["for", "surname"], ["id", "surname", "type", "text", "pInputText", "", "formControlName", "surname"], ["for", "birthDate"], ["inputId", "birthDate", "formControlName", "birthDate"], [1, "p-col-12", "lg:col-6", "md:col-12"], ["for", "line1"], ["id", "line1", "type", "text", "pInputText", "", "formControlName", "line1"], ["for", "line2"], ["id", "line2", "type", "text", "pInputText", "", "formControlName", "line2"], ["for", "postcode"], ["id", "postcode", "type", "text", "pInputText", "", "formControlName", "postcode"], ["for", "city"], ["id", "city", "type", "text", "pInputText", "", "formControlName", "city"], ["for", "country"], ["id", "country", "type", "text", "pInputText", "", "formControlName", "country"], ["for", "phoneNumber"], ["id", "phoneNumber", "type", "text", "pInputText", "", "formControlName", "phoneNumber"], ["for", "iban"], ["id", "iban", "type", "text", "pInputText", "", "formControlName", "iban"], ["pButton", "", "pRipple", "", "id", "add-edit-btn", "label", "Save", "icon", "pi pi-check", 1, "p-button", 3, "disabled", "click"], ["pButton", "", "pRipple", "", "id", "cancel-btn", "label", "Cancel", "icon", "pi pi-times", 1, "p-button", 3, "click"]], template: function AddEditContactComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "form", 0)(1, "h2");
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](3, "div", 1)(4, "div", 2)(5, "label", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](6, "First Name");
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](7, "input", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](8, "div", 2)(9, "label", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](10, "Surname");
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](11, "input", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](12, "div", 2)(13, "label", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](14, "BirthDate");
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](15, "p-calendar", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](16, "div", 9)(17, "label", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](18, "Line1");
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](19, "input", 11);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](20, "div", 9)(21, "label", 12);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](22, "Line2");
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](23, "input", 13);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](24, "div", 2)(25, "label", 14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](26, "Postcode");
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](27, "input", 15);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](28, "div", 2)(29, "label", 16);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](30, "City");
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](31, "input", 17);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](32, "div", 2)(33, "label", 18);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](34, "Country");
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](35, "input", 19);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](36, "div", 2)(37, "label", 20);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](38, "Phone Number");
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](39, "input", 21);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](40, "div", 2)(41, "label", 22);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtext"](42, "IBAN");
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelement"](43, "input", 23);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](44, "button", 24);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵlistener"]("click", function AddEditContactComponent_Template_button_click_44_listener() { return ctx.addEdit(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](45, "button", 25);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵlistener"]("click", function AddEditContactComponent_Template_button_click_45_listener() { return ctx.cancel(); });
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementEnd"]()();
+AddEditContactComponent.ɵfac = function AddEditContactComponent_Factory(t) { return new (t || AddEditContactComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_8__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_8__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormBuilder), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_services__WEBPACK_IMPORTED_MODULE_3__.ContactService), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_core_services__WEBPACK_IMPORTED_MODULE_4__.NotificationService)); };
+AddEditContactComponent.ɵcmp = /*@__PURE__*/ _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({ type: AddEditContactComponent, selectors: [["app-add-edit-contact"]], decls: 57, vars: 14, consts: [[3, "formGroup"], [1, "grid", "p-fluid", "lg:col-6", "md:col-12"], [1, "p-col-12", "lg:col-4", "md:col-12"], ["for", "firstName"], ["id", "firstName", "type", "text", "pInputText", "", "formControlName", "firstName"], ["id", "firstName-error", "class", "p-error block", 4, "ngIf"], ["for", "surname"], ["id", "surname", "type", "text", "pInputText", "", "formControlName", "surname"], ["id", "surname-error", "class", "p-error block", 4, "ngIf"], ["for", "birthDate"], ["inputId", "birthDate", "formControlName", "birthDate"], ["id", "birthDate-error", "class", "p-error block", 4, "ngIf"], [1, "p-col-12", "lg:col-6", "md:col-12"], ["for", "line1"], ["id", "line1", "type", "text", "pInputText", "", "formControlName", "line1"], ["id", "line1-error", "class", "p-error block", 4, "ngIf"], ["for", "line2"], ["id", "line2", "type", "text", "pInputText", "", "formControlName", "line2"], ["for", "postcode"], ["id", "postcode", "type", "text", "pInputText", "", "formControlName", "postcode"], ["id", "postcode-error", "class", "p-error block", 4, "ngIf"], ["for", "city"], ["id", "city", "type", "text", "pInputText", "", "formControlName", "city"], ["id", "city-error", "class", "p-error block", 4, "ngIf"], ["for", "country"], ["id", "country", "type", "text", "pInputText", "", "formControlName", "country"], ["id", "country-error", "class", "p-error block", 4, "ngIf"], ["for", "phoneNumber"], ["id", "phoneNumber", "type", "text", "pInputText", "", "formControlName", "phoneNumber"], ["id", "phoneNumber-error", "class", "p-error block", 4, "ngIf"], ["id", "phoneNumber-pattern-error", "class", "p-error block", 4, "ngIf"], ["for", "iban"], ["id", "iban", "type", "text", "pInputText", "", "formControlName", "iban"], ["id", "iban-error", "class", "p-error block", 4, "ngIf"], ["id", "iban-pattern-error", "class", "p-error block", 4, "ngIf"], ["pButton", "", "pRipple", "", "id", "add-edit-btn", "label", "Save", "icon", "pi pi-check", 1, "p-button", 3, "disabled", "click"], ["pButton", "", "pRipple", "", "id", "cancel-btn", "label", "Cancel", "icon", "pi pi-times", 1, "p-button", 3, "click"], ["id", "firstName-error", 1, "p-error", "block"], ["id", "surname-error", 1, "p-error", "block"], ["id", "birthDate-error", 1, "p-error", "block"], ["id", "line1-error", 1, "p-error", "block"], ["id", "postcode-error", 1, "p-error", "block"], ["id", "city-error", 1, "p-error", "block"], ["id", "country-error", 1, "p-error", "block"], ["id", "phoneNumber-error", 1, "p-error", "block"], ["id", "phoneNumber-pattern-error", 1, "p-error", "block"], ["id", "iban-error", 1, "p-error", "block"], ["id", "iban-pattern-error", 1, "p-error", "block"]], template: function AddEditContactComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "form", 0)(1, "h2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](3, "div", 1)(4, "div", 2)(5, "label", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](6, "First Name");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](7, "input", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](8, AddEditContactComponent_small_8_Template, 2, 0, "small", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](9, "div", 2)(10, "label", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](11, "Surname");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](12, "input", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](13, AddEditContactComponent_small_13_Template, 2, 0, "small", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](14, "div", 2)(15, "label", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](16, "Birth Date");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](17, "p-calendar", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](18, AddEditContactComponent_small_18_Template, 2, 0, "small", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](19, "div", 12)(20, "label", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](21, "Line1");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](22, "input", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](23, AddEditContactComponent_small_23_Template, 2, 0, "small", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](24, "div", 12)(25, "label", 16);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](26, "Line2");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](27, "input", 17);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](28, "div", 2)(29, "label", 18);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](30, "Postcode");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](31, "input", 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](32, AddEditContactComponent_small_32_Template, 2, 0, "small", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](33, "div", 2)(34, "label", 21);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](35, "City");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](36, "input", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](37, AddEditContactComponent_small_37_Template, 2, 0, "small", 23);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](38, "div", 2)(39, "label", 24);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](40, "Country");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](41, "input", 25);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](42, AddEditContactComponent_small_42_Template, 2, 0, "small", 26);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](43, "div", 2)(44, "label", 27);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](45, "Phone Number");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](46, "input", 28);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](47, AddEditContactComponent_small_47_Template, 2, 0, "small", 29);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](48, AddEditContactComponent_small_48_Template, 2, 0, "small", 30);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](49, "div", 2)(50, "label", 31);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](51, "IBAN");
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](52, "input", 32);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](53, AddEditContactComponent_small_53_Template, 2, 0, "small", 33);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtemplate"](54, AddEditContactComponent_small_54_Template, 2, 0, "small", 34);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](55, "button", 35);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function AddEditContactComponent_Template_button_click_55_listener() { return ctx.addEdit(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](56, "button", 36);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵlistener"]("click", function AddEditContactComponent_Template_button_click_56_listener() { return ctx.cancel(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()();
     } if (rf & 2) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("formGroup", ctx.contactForm);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtextInterpolate"](ctx.title);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](42);
-        _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("disabled", !ctx.isFormValid);
-    } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_5__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.DefaultValueAccessor, primeng_inputtext__WEBPACK_IMPORTED_MODULE_9__.InputText, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_5__.FormControlName, primeng_calendar__WEBPACK_IMPORTED_MODULE_10__.Calendar, primeng_button__WEBPACK_IMPORTED_MODULE_11__.ButtonDirective, primeng_ripple__WEBPACK_IMPORTED_MODULE_12__.Ripple], styles: [".p-button[_ngcontent-%COMP%] {\n  margin-right: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFkZC1lZGl0LWNvbnRhY3QuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBQTtBQUNGIiwiZmlsZSI6ImFkZC1lZGl0LWNvbnRhY3QuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucC1idXR0b24ge1xyXG4gIG1hcmdpbi1yaWdodDogMTBweDtcclxufVxyXG4iXX0= */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("formGroup", ctx.contactForm);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate"](ctx.title);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.showErrorMessage("firstName", "required"));
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.showErrorMessage("surname", "required"));
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.showErrorMessage("birthDate", "required"));
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.showErrorMessage("line1", "required"));
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.showErrorMessage("postcode", "required"));
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.showErrorMessage("city", "required"));
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.showErrorMessage("country", "required"));
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.showErrorMessage("phoneNumber", "required"));
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.showErrorMessage("phoneNumber", "pattern"));
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.showErrorMessage("iban", "required"));
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngIf", ctx.showErrorMessage("iban", "pattern"));
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("disabled", !ctx.isFormValid);
+    } }, directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_6__["ɵNgNoValidate"], _angular_forms__WEBPACK_IMPORTED_MODULE_6__.NgControlStatusGroup, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormGroupDirective, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.DefaultValueAccessor, primeng_inputtext__WEBPACK_IMPORTED_MODULE_9__.InputText, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.NgControlStatus, _angular_forms__WEBPACK_IMPORTED_MODULE_6__.FormControlName, _angular_common__WEBPACK_IMPORTED_MODULE_10__.NgIf, primeng_calendar__WEBPACK_IMPORTED_MODULE_11__.Calendar, primeng_button__WEBPACK_IMPORTED_MODULE_12__.ButtonDirective, primeng_ripple__WEBPACK_IMPORTED_MODULE_13__.Ripple], styles: [".p-button[_ngcontent-%COMP%] {\n  margin-right: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFkZC1lZGl0LWNvbnRhY3QuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBQTtBQUNGIiwiZmlsZSI6ImFkZC1lZGl0LWNvbnRhY3QuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucC1idXR0b24ge1xyXG4gIG1hcmdpbi1yaWdodDogMTBweDtcclxufVxyXG4iXX0= */"] });
 
 
 /***/ }),
