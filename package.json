@@ -12,7 +12,7 @@
     "docker:run:dev": "docker run --name invelop-contact-manager-ui-local -d -p 4200:80 invelop-contact-manager-ui-local/latest",
     "docker:run:beta": "docker run --name invelop-contact-manager-ui-beta -d -p 4200:80 invelop-contact-manager-ui-beta/latest",
     "docker:rebuild:dev": "docker container stop invelop-contact-manager-ui-local && docker container rm invelop-contact-manager-ui-local && npm run docker:build:dev && npm run docker:run:dev",
-    "docker:rebuild:beta": "docker container stop invelop-contact-manager-ui-beta && docker container rm invelop-contact-manager-ui-beta && npm run docker:build:beta && npm run docker:run:beta",
+    "docker:rebuild:beta": "git pull && docker container stop invelop-contact-manager-ui-beta && docker container rm invelop-contact-manager-ui-beta && npm run docker:build:beta && npm run docker:run:beta",
     "test": "ng test"
   },
   "private": true,

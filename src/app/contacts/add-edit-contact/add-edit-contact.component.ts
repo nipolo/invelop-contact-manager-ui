@@ -93,6 +93,13 @@ export class AddEditContactComponent implements OnInit, OnDestroy {
     this.subscription.forEach((s) => s.unsubscribe());
   }
 
+  showErrorMessage(controlName: string, validationType: string) {
+    return (
+      this.contactForm.controls[controlName].dirty &&
+      this.contactForm.controls[controlName].errors?.[validationType]
+    );
+  }
+
   cancel() {
     this.router.navigate([
       uiRoutes.contactsModule.base,
