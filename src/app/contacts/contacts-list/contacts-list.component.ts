@@ -19,6 +19,7 @@ export class ContactsListComponent implements OnInit {
   contacts$: Observable<ContactModel[]>;
   totalRecords$: Observable<number>;
   isLoading = false;
+  rowsPerPageOptions = [3, 5, 10];
 
   constructor(
     private contactService: ContactService,

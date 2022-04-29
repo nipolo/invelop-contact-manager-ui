@@ -145,6 +145,7 @@ describe("CRUD operations on Contacts", () => {
   it("Delete existing contact", () => {
     cy.get("tr>td>button", { timeout: 5000 }).eq(1).click("center");
     cy.get(".p-confirm-dialog-accept", { timeout: 5000 }).click("center");
+    cy.visit(Cypress.env("UI_BASE_URL"));
     cy.get("tr>td>button", { timeout: 5000 }).eq(0).click("center");
 
     cy.location().should((location) => {
