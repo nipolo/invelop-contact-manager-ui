@@ -60,5 +60,5 @@ The application is deployed [here](http://63.35.57.109:4200/).
 - All the fields except Line1 are required
 - There is custom validations for:
   - Phone Number - starting with '+' (optional) then digits 0-9 and '-' between them
-  - IBAN - Example - AABB-XXXX-XXXX-XXXX-XXXX-XX where A = letter any capital letter A-Z, B - any digit 0-9, X - any cappital letter A-Z or any digit 0-9
+  - IBAN - Example - AABB-XXXX-XXXX-XXXX-XXXX-XX where A = letter any capital letter A-Z, B = any digit 0-9, X = any cappital letter A-Z or any digit 0-9
 - The application is responsive, i.e. is mobile-friendly
